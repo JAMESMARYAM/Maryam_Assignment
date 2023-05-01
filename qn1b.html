@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 1b</title>
+</head>
+<style>
+    .container{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        padding-top: 60px;
+        transition: 0.5s;
+
+
+    }
+    .container a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818188;
+        display: block;
+        transition: 0.3s;
+
+
+    }
+    .container a:hover{
+        color: #f1f1f1;
+    }
+    .container .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+
+    }
+</style>
+<script>
+    function opennav(){
+        document.querySelector('.container').style.width = '250px';
+
+    }
+    function closenav(){
+        document.querySelector('.container').style.width = 0; 
+    }
+    
+</script>
+<body>
+    <div class="container" id="nav">
+            <a href="javascript:void(0)" class="closebtn()" onclick="closenav()">&times</a>
+            <a href="#"> HTml</a>
+            <a href="#">Css</a>
+            <a href="#">Javascript</a>
+            <a href="#">Java</a>
+            <a href="#">Python</a>
+            <a href="#">C++</a>
+    </div>
+    <span onclick="opennav()">&#9776open</span>
+    <div class="main">
+
+    </div>
+</body>
+</html>
