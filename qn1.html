@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question one</title>
+</head>
+<script>
+    function textchange() {
+        let p=document.querySelector('p');
+        p.innerHTML = 'Welcome to my page';
+       // p.innerHTML = 'subscribe to my page';
+        p.style.color='green';
+        p.style.fontSize='30px';
+        
+    }
+    // function change(){
+    //     let p=document.querySelector('p');
+    //     p.innerHTML = 'subscribe to my page';
+    //     p.style.color = 'red';
+    //     p.style.fontSize = '30px'
+
+   // }
+        document.addEventListener('DOMContentLoaded', function(){
+        //setTimeout(textchange,3000);
+        setInterval(textchange,3000);
+        
+    })
+    // document.addEventListener('DOMContentLoaded', function(){
+    // setInterval(change,3000);
+    // })
+    </script>
+    <style>
+        p{
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+
+<body>
+    <p>Hellow word<p>
+   
+</body>
+</html>
