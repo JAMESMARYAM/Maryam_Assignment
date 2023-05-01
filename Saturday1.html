@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Changing Text</title>
+    <style>
+      /* Style the text to be centered and with a large font */
+      #text {
+        text-align: center;
+        font-size: 72px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text">Hello, My beatiful People!</div>
+    <script>
+      // Get the text element
+      const textElement = document.getElementById('text');
+
+      // Define the new text
+      const newText = 'Welcome to my website!';
+
+      // Change the text after 5 seconds
+      setTimeout(() => {textElement.textContent = newText;}, 2000);
+    </script>
+  </body>
+</html>
