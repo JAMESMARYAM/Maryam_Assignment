@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 2</title>
+</head>
+<style>
+    .web{
+        width: 50%;
+        height: 1000px;
+
+
+    }
+    .text{
+        padding-top: 2px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    
+</style>
+<body>
+
+        <div class="web">
+            <div class="text">ONLINE QUIZ</div>
+            <div class="qn">
+                <div class="q1">1: Biology have ----- main branches</div>
+                <div class="ans" data-questin="1", data-answer="Two"></div>
+                <input type="radio" name="qn1" value="a"><label for="Two">a)Two</label><br>
+                <input type="radio" name="qn1" value="b"><label for="Three">b)Three</label><br>
+                <input type="radio" name="qn1" value="c"><label for="Ten">c)Ten</label><br>
+                <input type="radio" name="qn1" value="d"><label for="Five">d)Five</label><br>
+
+                <div class="q2" style="margin-top: 50px;">2:Zoology is the study of ----------.</div>
+                <div class="ans" data-questin="2", data-answer="Animal"></div>
+                <input type="radio" name="qn2" value="a"><label for="Animal">a)Animal</label><br>
+                <input type="radio" name="qn2" value="b"><label for="Plant">b)Plant</label><br>
+                <input type="radio" name="qn2" value="c"><label for="Cat">c)Cat</label><br>
+                <input type="radio" name="qn2" value="d"><label for="Human">d)Human</label><br>
+
+                <div class="q3" style="margin-top: 50px;">3: process of plant to produce their own food</div>
+                <div class="ans" data-questin="1", data-answer="Photosynthesis" style="margin-bottom: 2px;"></div>
+                <input type="radio" name="qn3" value="a"><label for="Photosynthesis">a)Photosynthesis</label><br>
+                <input type="radio" name="qn3" value="b"><label for="Oogenesis">b)Oogenesis</label><br>
+                <input type="radio" name="qn3" value="c"><label for="Cytogenesis">c)Cytogenesis</label><br>
+                <input type="radio" name="qn3" value="d"><label for="Zygogenesis">d)Zygogenesis</label><br>
+            </div>
+
+            <button style="margin-top: 100px;" onclick="calculateScore()">submit</button>
+
+            
+    
+        </div>
+        <script src="qn2.js"></script>
+    
+</body>
+</html>
