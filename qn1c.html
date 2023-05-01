@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 1c</title>
+</head>
+<script>
+    function image(){
+        let img= document.querySelector('img');
+        img.style.float= 'right';
+
+    }
+    function school(){
+        let img= document.querySelector('img');
+        img.style.height= '200px';
+        img.style.width= '300px';
+    }
+    function redo(){
+        let img= document.querySelector('img');
+        img.style.width='90px';
+        img.style.height='90px';
+    }
+</script>
+<body>
+    <img src="images.png"  width='150px' onmouseover="school()" onmouseout="redo()"><br>
+
+    <button onclick='image()'>click and move</button>
+    
+    
+</body>
+</html>
